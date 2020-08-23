@@ -9,7 +9,7 @@ router.register('meetings', views.SimpleMeetingView)
 # router.register('visualmeetings', views.VisualMeetingView)
 router.register('players', views.Player1View)
 router.register('games', views.SimpleGameView)
-router.register('hands', views.HandView)
+router.register('all-hands', views.HandView)
 
 urlpatterns = [
     path('', include(router.urls)),
