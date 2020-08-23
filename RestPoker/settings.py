@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'q3)3+7oby5#uxj65vf+%_m2&nr8q^j#+lbbtd0^rbex=w5xaxw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['purple-poker.herokuapp.com/' , '127.0.0.1' ]
 # ALLOWED_HOSTS = [ ]
