@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,7 +25,7 @@ SECRET_KEY = 'q3)3+7oby5#uxj65vf+%_m2&nr8q^j#+lbbtd0^rbex=w5xaxw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['purple-poker.herokuapp.com' , '127.0.0.1' ]
+ALLOWED_HOSTS = ['purple-poker.herokuapp.com', '127.0.0.1' ]
 # ALLOWED_HOSTS = [ ]
 
 # Application definition
@@ -118,3 +119,8 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
+django_heroku.settings(locals())
+
+
+django_heroku.settings(locals())
