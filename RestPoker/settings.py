@@ -127,7 +127,7 @@ django_heroku.settings(locals())
 
 # take care about cors origin issue
 CORS_ORIGIN_WHITELIST = [
-    'sad-davinci-34ca01.netlify.app/hands/',
+    'https://purple-poker.herokuapp.com/hands/',
     "http://127.0.0.1:3000",
     ...
 ]
