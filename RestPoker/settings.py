@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'mypoker',
     'django_filters',
-    'corsheaders'
 
 ]
 
