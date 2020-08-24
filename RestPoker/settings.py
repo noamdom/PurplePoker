@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['purple-poker.herokuapp.com', '127.0.0.1' ]
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'mypoker',
     'django_filters',
+    'corsheaders'
 
 ]
 
@@ -125,9 +127,8 @@ STATIC_URL = '/static/'
 # take care about using static files
 django_heroku.settings(locals())
 
-# take care about cors origin issue
+# # take care about cors origin issue
 CORS_ORIGIN_WHITELIST = [
-    'https://purple-poker.herokuapp.com/hands/',
-    "http://127.0.0.1:3000",
-    ...
+    'https://purple-poker.herokuapp.com',
+    "http://localhost:3000",
 ]
